@@ -1,45 +1,70 @@
+import { Brain, LineChart, Target, Zap } from "lucide-react";
+
 export function WhyChoose() {
   const items = [
     {
-      title: "10 hrs/week",
-      desc: "Save Time",
-      info: "Automate registration and simplify workflow with intelligent tools.",
+      icon: <Brain className="w-6 h-6 text-orange-500" />,
+      stat: "+35%",
+      title: "AI-Powered Discovery",
+      desc: "Smart algorithms help learners find your courses effortlessly in this crowded space.",
     },
     {
-      title: "+35%",
-      desc: "Increase Engagement",
-      info: "Track & improve student participation through data-driven dashboards.",
+      icon: <LineChart className="w-6 h-6 text-orange-500" />,
+      stat: "+35%",
+      title: "Engagement Analytics",
+      desc: "Track what works best and refine your offerings to stay ahead of the competition.",
     },
     {
-      title: "96% accuracy",
-      desc: "Better Decisions",
-      info: "Make informed choices backed by real-time insights.",
+      icon: <Target className="w-6 h-6 text-orange-500" />,
+      stat: "98% accuracy",
+      title: "Targeted Filtering",
+      desc: "Enable precise discovery ,  let learners zero in on your most relevant courses.",
     },
     {
-      title: "5x faster",
-      desc: "Streamline Workflows",
-      info: "Improve response time with integrated automation.",
+      icon: <Zap className="w-6 h-6 text-orange-500" />,
+      stat: "5x faster",
+      title: "Seamless Integration",
+      desc: "Connect your existing platform effortlessly ,  and get discovered by more learners.",
     },
   ];
+
   return (
-    <section className="py-20 bg-orange-50/30 text-center">
-      <h2 className="text-3xl font-bold mb-4">Why Choose Learner’s Space?</h2>
-      <p className="text-slate-600 mb-10">
-        Measurable results that transform your learning platform.
-      </p>
-      <div className="grid grid-cols-1 md:grid-cols-4 max-w-6xl mx-auto gap-6">
+    <section className="py-24 bg-white text-center">
+      {/* Section Header */}
+      <div className="mb-14">
+        <h2 className="text-4xl font-bold text-slate-900 mb-3">
+          Why Choose Learner Space?
+        </h2>
+        <p className="text-slate-600 max-w-2xl mx-auto">
+          Let learners find you in this crowded digital space. Empower your
+          EdTech platform with measurable results and smarter discovery.
+        </p>
+      </div>
+
+      {/* Cards */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6">
         {items.map((i, idx) => (
           <div
             key={idx}
-            className="p-6 bg-white border rounded-2xl shadow-sm hover:shadow-md transition"
+            className="bg-white border border-slate-100 rounded-2xl p-8 text-left shadow-[0_4px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_6px_18px_rgba(0,0,0,0.08)] transition-shadow duration-300"
           >
-            <div className="text-xl font-semibold text-orange-500">
+            {/* Icon */}
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-orange-50 to-orange-100 mb-5">
+              {i.icon}
+            </div>
+
+            {/* Stat */}
+            <div className="text-2xl font-semibold text-orange-500 mb-1">
+              {i.stat}
+            </div>
+
+            {/* Title */}
+            <div className="text-lg font-semibold text-slate-900 mb-2">
               {i.title}
             </div>
-            <div className="text-sm font-semibold text-slate-800 mt-1">
-              {i.desc}
-            </div>
-            <p className="text-sm text-slate-600 mt-2">{i.info}</p>
+
+            {/* Description */}
+            <p className="text-slate-500 text-sm leading-relaxed">{i.desc}</p>
           </div>
         ))}
       </div>

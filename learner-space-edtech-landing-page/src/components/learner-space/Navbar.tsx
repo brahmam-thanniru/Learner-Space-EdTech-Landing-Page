@@ -16,7 +16,7 @@ export function Navbar() {
           onClick={() => handleScroll("home")}
         >
           <div className="text-2xl font-bold text-orange-500">
-            Learner’s <span className="text-slate-800">Space</span>
+            Learner <span className="text-slate-800">Space</span>
           </div>
         </div>
 
@@ -26,8 +26,8 @@ export function Navbar() {
             { id: "features", label: "Features" },
             { id: "dashboard", label: "Dashboard" },
             { id: "why-choose", label: "Why Choose" },
-            { id: "analytics", label: "Analytics" },
-            { id: "ai-insights", label: "AI Insights" },
+            { id: "differentiator", label: "Difference" },
+            { id: "complete-feature", label: "Complete Features" },
             { id: "cta", label: "Contact" },
           ].map((link) => (
             <li
