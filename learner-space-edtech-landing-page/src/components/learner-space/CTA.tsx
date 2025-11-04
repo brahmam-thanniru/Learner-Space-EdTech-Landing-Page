@@ -24,9 +24,8 @@ export function CTA() {
             Be Where Learners Begin Their Journey
           </h2>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Join our platform to list your courses, reach more learners, and
-            generate qualified leads , powered by AI-driven discovery and smart
-            visibility.
+            Join Learner Space and get discovered by learners looking for your
+            programs today.
           </p>
         </motion.div>
 
