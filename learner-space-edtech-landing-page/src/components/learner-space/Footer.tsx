@@ -1,6 +1,8 @@
-import { Linkedin, Twitter, Facebook } from "lucide-react";
+import { Linkedin, Twitter, Facebook, Link } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function Footer() {
+  const navigate = useNavigate();
   return (
     <footer className="bg-slate-900 text-slate-300 py-12 mt-20">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -25,19 +27,20 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-orange-500 transition">
+              <p
+                className="hover:text-orange-500 transition"
+                onClick={() => navigate("/contact ")}
+              >
                 Partner With Us
-              </a>
+              </p>
             </li>
             <li>
-              <a href="#" className="hover:text-orange-500 transition">
-                Careers
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-500 transition">
-                Contact
-              </a>
+              <p
+                className="hover:text-orange-500 transition"
+                onClick={() => navigate("/contact ")}
+              >
+                Contact Us
+              </p>
             </li>
           </ul>
         </div>

@@ -30,9 +30,9 @@ export default function LearnerSpace() {
       <section id="how-it-works">
         <HowItWorks />
       </section>
-      <section id="features">
+      {/* <section id="features">
         <Features />
-      </section>
+      </section> */}
 
       <section id="dashboard">
         <Dashboard />

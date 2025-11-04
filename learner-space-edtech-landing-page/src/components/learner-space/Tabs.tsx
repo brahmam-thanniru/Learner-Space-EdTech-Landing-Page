@@ -110,7 +110,7 @@ export function Tabs() {
               </h4>
               <ul className="space-y-3 text-slate-800">
                 {[
-                  "AI-based recommendations to boost visibility",
+                  // "AI-based recommendations to boost visibility",
                   "Category and keyword tagging system",
                   "Real-time course status updates",
                   "Automatic lead notifications for enrollments",
@@ -134,9 +134,9 @@ export function Tabs() {
               <ul className="space-y-3 text-slate-800">
                 {[
                   "Connect your existing LMS easily",
-                  "Auto-sync course details and enrollments",
+                  // "Auto-sync course details and enrollments",
                   "Manage redirects for learner registrations",
-                  "Secure lead API for real-time updates",
+                  // "Secure lead API for real-time updates",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="text-orange-500 mt-1">✓</span>
@@ -152,8 +152,8 @@ export function Tabs() {
               <ul className="space-y-3 text-slate-800">
                 {[
                   "Dedicated onboarding assistance",
-                  "Custom branding for course pages",
-                  "API documentation and developer tools",
+                  // "Custom branding for course pages",
+                  // "API documentation and developer tools",
                   "Priority technical support",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2">

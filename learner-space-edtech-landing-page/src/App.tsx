@@ -1,10 +1,17 @@
 import "./App.css";
+import Contact from "./components/learner-space/ContactUs";
+import Dashboard from "./components/learner-space/Dashboard";
 import LearnerSpace from "./pages/LearnerSpace";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <LearnerSpace />
+      <Router>
+        <Routes>
+          <Route path="/" element={<LearnerSpace />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
     </>
   );
 }

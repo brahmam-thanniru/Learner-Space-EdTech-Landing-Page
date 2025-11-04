@@ -23,7 +23,7 @@ export function Navbar() {
         <ul className="hidden md:flex gap-6 text-sm font-medium text-slate-600">
           {[
             { id: "home", label: "Home" },
-            { id: "features", label: "Features" },
+            // { id: "features", label: "Features" },
             { id: "dashboard", label: "Dashboard" },
             { id: "why-choose", label: "Why Choose" },
             { id: "differentiator", label: "Difference" },
