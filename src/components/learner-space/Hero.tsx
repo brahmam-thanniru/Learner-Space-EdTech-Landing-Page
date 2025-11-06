@@ -106,17 +106,6 @@ export function Hero() {
           </Button>
         </motion.div>
       </motion.div>
-
-      {/* ✨ Trust Tagline */}
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
-        className="mt-8 text-sm text-slate-500"
-      >
-        Trusted by 500+ EdTech companies to reach 10,000+ active learners
-        worldwide
-      </motion.p>
     </section>
   );
 }

@@ -22,9 +22,9 @@ export default function LearnerSpace() {
       <section id="problem-section">
         <ProblemSection />
       </section>
-      <section id="stats">
+      {/* <section id="stats">
         <Stats />
-      </section>
+      </section> */}
       <section id="how-it-works">
         <HowItWorks />
       </section>
