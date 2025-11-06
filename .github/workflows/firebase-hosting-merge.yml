@@ -22,7 +22,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies and build
-        working-directory: ./Learner-Space-EdTech-Landing-Page
+        # working-directory: Learner-Space-EdTech-Landing-Page
         run: |
           npm ci
           npm run build
