@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export function Differentiator() {
   const values = [
-    "Neutral platform ,  no course sales or commissions",
+    "Neutral platform",
     "Transparency-first approach builds learner trust",
     "Access to engagement analytics and performance insights",
     "Organic discovery → lower acquisition costs (CAC)",

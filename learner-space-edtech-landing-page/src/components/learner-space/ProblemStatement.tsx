@@ -67,19 +67,30 @@ export function ProblemSection() {
         </div>
 
         {/* 🔗 Bridge Visual */}
-        <div className="flex items-center justify-center gap-4 pt-16 text-slate-700">
-          <div className="px-6 py-3 rounded-lg bg-white border border-orange-100 shadow-sm font-medium">
-            Learners
-          </div>
-          <div className="flex-1 max-w-[100px] h-[2px] bg-gradient-to-r from-slate-300 via-orange-400 to-slate-300"></div>
-          <div className="px-6 py-3 rounded-lg bg-orange-500 text-white font-semibold shadow-md">
-            Learner Space
-          </div>
-          <div className="flex-1 max-w-[100px] h-[2px] bg-gradient-to-r from-orange-400 via-slate-300 to-slate-300"></div>
-          <div className="px-6 py-3 rounded-lg bg-white border border-orange-100 shadow-sm font-medium">
-            EdTechs
-          </div>
-        </div>
+        {/* 🔗 Responsive Bridge Visual */}
+<div className="flex flex-col md:flex-row items-center justify-center gap-6 pt-16 text-slate-700">
+  {/* Learners */}
+  <div className="px-6 py-3 rounded-lg bg-white border border-orange-100 shadow-sm font-medium">
+    Learners
+  </div>
+
+  {/* Connector line */}
+  <div className="md:flex-1 md:max-w-[120px] w-[2px] h-[60px] md:w-[120px] md:h-[2px] bg-gradient-to-b md:bg-gradient-to-r from-slate-300 via-orange-400 to-slate-300 rounded-full"></div>
+
+  {/* Learner Space center */}
+  <div className="px-6 py-3 rounded-lg bg-orange-500 text-white font-semibold shadow-md">
+    Learner Space
+  </div>
+
+  {/* Connector line */}
+  <div className="md:flex-1 md:max-w-[120px] w-[2px] h-[60px] md:w-[120px] md:h-[2px] bg-gradient-to-b md:bg-gradient-to-r from-orange-400 via-slate-300 to-slate-300 rounded-full"></div>
+
+  {/* EdTechs */}
+  <div className="px-6 py-3 rounded-lg bg-white border border-orange-100 shadow-sm font-medium">
+    EdTechs
+  </div>
+</div>
+
       </div>
     </section>
   );

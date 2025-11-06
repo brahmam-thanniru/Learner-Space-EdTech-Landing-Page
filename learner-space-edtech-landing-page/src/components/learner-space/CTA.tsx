@@ -53,15 +53,6 @@ export function CTA() {
           </Button>
         </motion.div>
 
-        {/* 🧡 Tagline */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-          className="mt-8 text-sm text-white/80"
-        >
-          Trusted by 500+ EdTech companies to reach 10,000+ learners worldwide
-        </motion.p>
       </div>
     </section>
   );
