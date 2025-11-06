@@ -24,8 +24,13 @@ jobs:
         with:
           node-version: 20
 
+      - name: Verify directory and list files
+        run: |
+          pwd
+          ls -la
+          echo "Looking for index.html and package.json above this line"
+
       - name: Install dependencies and build
-        working-directory: ./Learner-Space-EdTech-Landing-Page
         run: |
           npm ci
           npm run build
