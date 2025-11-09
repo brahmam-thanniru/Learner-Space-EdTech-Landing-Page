@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies and build
         working-directory: ./
         run: |
-          npm 
+          npm ci
           npm run build
 
       - name: Deploy to Firebase Hosting
