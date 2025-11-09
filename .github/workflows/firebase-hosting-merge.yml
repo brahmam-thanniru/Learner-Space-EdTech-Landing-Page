@@ -28,9 +28,9 @@ jobs:
           echo "Looking for index.html and package.json above this line"
 
       - name: Install dependencies and build
-        working-directory: ./Learner-Space-EdTech-Landing-Page
+        working-directory: ./
         run: |
-          npm ci
+          npm 
           npm run build
 
       - name: Deploy to Firebase Hosting
