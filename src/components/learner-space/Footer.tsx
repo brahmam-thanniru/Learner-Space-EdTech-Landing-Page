@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Facebook,  } from "lucide-react";
+import { Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export function Footer() {
@@ -22,9 +22,12 @@ export function Footer() {
           <h5 className="text-white font-semibold mb-3">Company</h5>
           <ul className="space-y-1 text-sm">
             <li>
-              <a href="#" className="hover:text-orange-500 transition">
+              <p
+                className="hover:text-orange-500 transition cursor-pointer"
+                onClick={() => navigate("/aboutus")}
+              >
                 About Us
-              </a>
+              </p>
             </li>
             <li>
               <p
@@ -61,7 +64,8 @@ export function Footer() {
           <h5 className="text-white font-semibold mb-3">Connect With Us</h5>
           <div className="flex gap-4 text-lg">
             <a
-              href="#"
+              href="https://www.linkedin.com/company/learnerspaceofficial/"
+              target="_blank"
               aria-label="LinkedIn"
               className="hover:text-orange-500 transition"
             >
@@ -69,17 +73,19 @@ export function Footer() {
             </a>
             <a
               href="#"
-              aria-label="Twitter"
-              className="hover:text-orange-500 transition"
-            >
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a
-              href="#"
+              target="_blank"
               aria-label="Facebook"
               className="hover:text-orange-500 transition"
             >
               <Facebook className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.instagram.com/learnerspace_ed?igsh=ZnowdHBjbHNxdzdo"
+              target="_blank"
+              aria-label="Instagram"
+              className="hover:text-orange-500 transition"
+            >
+              <Instagram className="w-5 h-5" />
             </a>
           </div>
         </div>
