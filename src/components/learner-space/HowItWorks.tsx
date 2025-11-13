@@ -69,6 +69,9 @@ const HowItWorks = () => {
           <Button
             size="lg"
             className="text-lg px-8 py-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
+            onClick={() =>
+              (window.location.href = "https://portal.learnerspace.in/signup")
+            }
           >
             Start Listing
           </Button>
